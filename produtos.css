@@ -47,6 +47,7 @@ nav a {
     border-style: solid;*/
     /* a mesma coisa só que todos os parâmetrso da borda em uma linha*/
     border: 2px solid #000000;
+    border-radius: 10px;
 
 }
 
