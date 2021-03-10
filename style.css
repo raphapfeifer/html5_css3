@@ -166,8 +166,13 @@ td, th{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
+    /*quando é utilizado um float e no caso a imagem do utensílios está utilizando esse recurso
+    todos os demais elementos da tela subiram e ficam ao redor da imagem citada, que está a esquerda.
+    Para limpar esse espaço e evitar que o título que no caso é o benefícios suba, é usado o clean 
+    para evitar isso, e como o elemento utensílios está à esquerda, é definido o left*/
     clear: left;
-    color: rgba(0,0,0,0.3);
+    /*Mesmas propriedades do box-shadow*/
+    /*text-shadow: 2px 2px #FF0000;*/
 }
 
 
@@ -244,6 +249,9 @@ td, th{
     width: 60%;
     opacity: 1;
     transition: 400ms;
+    /* os elementos na ordem são: eixo X, eixo Y, blur=grau de espalhamento da sombra, de sólido para transparente,
+     intensidade da borda e cor da sombra*/
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .imagem-beneficios:hover{
